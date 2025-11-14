@@ -1,0 +1,27 @@
+.header {
+    background:#000;
+}
+
+.header__inner {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.thanks__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.thanks__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
