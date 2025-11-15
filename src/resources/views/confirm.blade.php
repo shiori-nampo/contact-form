@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
-</head>
+@extends('layouts.app')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/confirm.css') }}">
+@endsection
+@section('content')
 
-<body>
-    <header class="header">
-        <div class="header__inner">
-            <a class="header__logo" href="/">Contact Form
-            </a>
-</div>
-</header>
-
-
-<main>
     <div class="confirm__content">
         <div class="confirm__heading">
             <h2>お問い合わせ内容確認</h2>
@@ -42,7 +28,7 @@
     <th class="confirm-table__header">電話番号</th>
     <td class="confirm-table__text">
     <input type="tel" name="tel" value="{{ $contact['tel'] }}" readonly/>
-    
+
 </tr>
 <tr class="confirm-table__row">
     <th class="confirm-table__header">お問い合わせ内容</th>
@@ -57,8 +43,4 @@
 </div>
 </form>
 </div>
-</main>
-
-
-</body>
-</html>
+@endsection
